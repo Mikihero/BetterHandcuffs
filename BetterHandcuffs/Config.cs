@@ -16,5 +16,8 @@ namespace BetterHandcuffs
         
         [Description("Should players with GodMode enabled be immune to handcuffing? Default: true")]
         public bool IgnoreGodMode { get; set; } = true;
+
+        [Description("Should the handcuffed player drop items? (should fix handcuffing through RA not dropping items, if set to false base handcuffing soemone with a gun will still drop their items). Default: true")]
+        public bool DropItems { get; set; } = true;
     }
 }
