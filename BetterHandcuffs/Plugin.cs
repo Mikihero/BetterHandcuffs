@@ -8,7 +8,7 @@ namespace BetterHandcuffs
     {
         public static Plugin Instance;
         public override Version RequiredExiledVersion => new Version(6,0,0,0);
-        public override Version Version => new Version(1, 0, 0, 0);
+        public override Version Version => new Version(1, 1, 0);
         public override string Author => "Miki_hero";
         
         private EventHandlers _eventHandlers;
