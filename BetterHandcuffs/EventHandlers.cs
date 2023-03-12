@@ -14,18 +14,14 @@ namespace BetterHandcuffs
                 ev.IsAllowed = false;
             }
             
-            else if (ev.Target.Role.Type == RoleTypeId.Tutorial && _cfg.IgnoreTutorials)
+            if (ev.Target.Role.Type == RoleTypeId.Tutorial && _cfg.IgnoreTutorials)
             {
                 ev.IsAllowed = false;
             }
 
-            else if (ev.Player.IsGodModeEnabled && _cfg.IgnoreGodMode)
+            if (ev.Player.IsGodModeEnabled && _cfg.IgnoreGodMode)
             {
                 ev.IsAllowed = false;
-            }
-            else if (_cfg.DropItems)
-            {
-                ev.Target.DropItems();
             }
         }
     }
