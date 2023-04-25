@@ -16,5 +16,8 @@ namespace BetterHandcuffs
         
         [Description("Should players with GodMode enabled be immune to handcuffing? Default: true")]
         public bool IgnoreGodMode { get; set; } = true;
+
+        [Description("Should the plugin not check if the cuffed player has the perms to ignore cuffing.")]
+        public bool DontCheckForPerms { get; set; } = false;
     }
 }

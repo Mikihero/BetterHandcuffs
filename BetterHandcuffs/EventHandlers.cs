@@ -9,7 +9,7 @@ namespace BetterHandcuffs
         private readonly Config _cfg = Plugin.Instance.Config;
         public void OnHandcuffing(HandcuffingEventArgs ev)
         {
-            if (ev.Player.CheckPermission("bh.immunity"))
+            if (_cfg.DontCheckForPerms && ev.Player.CheckPermission("bh.immunity"))
             {
                 ev.IsAllowed = false;
             }
